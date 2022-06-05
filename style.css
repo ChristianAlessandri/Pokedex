@@ -1,0 +1,263 @@
+:root {
+    --bug-bg: rgb(168, 184, 32);
+    --bug-gradient-bg: rgba(168, 184, 32, .75);
+    --dark-bg: rgb(112, 88, 72);
+    --dark-gradient-bg: rgba(112, 88, 72, .75);
+    --dragon-bg: rgb(112, 56, 248);
+    --dragon-gradient-bg: rgba(112, 56, 248, .75);
+    --electric-bg: rgb(248, 208, 48);
+    --electric-gradient-bg: rgba(248, 208, 48, .75);
+    --fairy-bg: rgb(238, 153, 172);
+    --fairy-gradient-bg: rgba(238, 153, 172, .75);
+    --fighting-bg: rgb(192, 48, 40);
+    --fighting-gradient-bg: rgba(192, 48, 40, .75);
+    --fire-bg: rgb(240, 128, 48);
+    --fire-gradient-bg: rgba(240, 128, 48, .75);
+    --flying-bg: rgb(168, 144, 240);
+    --flying-gradient-bg: rgba(168, 144, 240, .75);
+    --ghost-bg: rgb(112, 88, 152);
+    --ghost-gradient-bg: rgba(112, 88, 152, .75);
+    --grass-bg: rgb(120, 200, 80);
+    --grass-gradient-bg: rgba(120, 200, 80, .75);
+    --ground-bg: rgb(224, 192, 104);
+    --ground-gradient-bg: rgba(224, 192, 104, .75);
+    --ice-bg: rgb(152, 216, 216);
+    --ice-gradient-bg: rgba(152, 216, 216, .75);
+    --normal-bg: rgb(168, 168, 120);
+    --normal-gradient-bg: rgba(168, 168, 120, .75);
+    --poison-bg: rgb(160, 64, 160);
+    --poison-gradient-bg: rgba(160, 64, 160, .75);
+    --psychic-bg: rgb(248, 88, 136);
+    --psychic-gradient-bg: rgba(248, 88, 136, .75);
+    --rock-bg: rgb(184, 160, 56);
+    --rock-gradient-bg: rgba(184, 160, 56, .75);
+    --steel-bg: rgb(184, 184, 208);
+    --steel-gradient-bg: rgba(184, 184, 208, .75);
+    --water-bg: rgb(104, 144, 240);
+    --water-gradient-bg: rgba(104, 144, 240, .75);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999; 
+}
+
+html,body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+    background-color: #4158D0;
+    background-image: linear-gradient(90deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poke-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+}
+
+.poke-card {
+    width: 240px;
+    height: 320px;
+    margin: 1rem 2.5vw;
+    padding: 0 .5rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.poke-card-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 .5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .37);
+}
+
+.poke-card-sprite {
+    position: absolute;
+    transform: translate(-50%, 25%);
+    width: auto;
+    height: 160px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .37));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .37));
+}
+
+.circle {
+    position: absolute;
+    transform: translate(-50%, 25%);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .37);
+}
+
+.poke-card-type {
+    position: absolute;
+    width: auto;
+    height: 24px;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+    border-radius: 0 0 0 50%;
+    background-color: rgba(0, 0, 0, .37);
+}
+
+.poke-card-id {
+    position: absolute;
+    right: 12px;
+    bottom: -12px;
+    font-weight: bold;
+}
+
+.poke-card-stats-container {
+    position: absolute;
+    bottom: 6px;
+    left: 2.5%;
+    width: 95%;
+    height: 72px;
+    text-align: left;
+    font-size: x-small;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .37);
+}
+
+.poke-card-stats {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 100%;
+    margin: .25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.poke-card-stats-num {
+    font-weight: bold;
+    color: #f39c12;
+}
+
+#bug {
+    background-image: linear-gradient(360deg, var(--bug-bg), var(--bug-gradient-bg));
+}
+
+#dark {
+    background-image: linear-gradient(360deg, var(--dark-bg), var(--dark-gradient-bg));
+}
+
+#dragon {
+    background-image: linear-gradient(360deg, var(--dragon-bg), var(--dragon-gradient-bg));
+}
+
+#electric {
+    background-image: linear-gradient(360deg, var(--electric-bg), var(--electric-gradient-bg));
+}
+
+#fairy {
+    background-image: linear-gradient(360deg, var(--fairy-bg), var(--fairy-gradient-bg));
+}
+
+#fighting {
+    background-image: linear-gradient(360deg, var(--fighting-bg), var(--fighting-gradient-bg));
+}
+
+#fire {
+    background-image: linear-gradient(360deg, var(--fire-bg), var(--fire-gradient-bg));
+}
+
+#flying {
+    background-image: linear-gradient(360deg, var(--flying-bg), var(--flying-gradient-bg));
+}
+
+#ghost {
+    background-image: linear-gradient(360deg, var(--ghost-bg), var(--ghost-gradient-bg));
+}
+
+#grass {
+    background-image: linear-gradient(360deg, var(--grass-bg), var(--grass-gradient-bg));
+}
+
+
+#ground {
+    background-image: linear-gradient(360deg, var(--ground-bg), var(--ground-gradient-bg));
+}
+
+#ice {
+    background-image: linear-gradient(360deg, var(--ice-bg), var(--ice-gradient-bg));
+}
+
+#normal {
+    background-image: linear-gradient(360deg, var(--normal-bg), var(--normal-gradient-bg));
+}
+
+#poison {
+    background-image: linear-gradient(360deg, var(--poison-bg), var(--poison-gradient-bg));
+}
+
+#psychic {
+    background-image: linear-gradient(360deg, var(--psychic-bg), var(--psychic-gradient-bg));
+}
+
+#rock {
+    background-image: linear-gradient(360deg, var(--rock-bg), var(--rock-gradient-bg));
+}
+
+#steel {
+    background-image: linear-gradient(360deg, var(--steel-bg), var(--steel-gradient-bg));
+}
+
+
+#water {
+    background-image: linear-gradient(360deg, var(--water-bg), var(--water-gradient-bg));
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+    .poke-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .poke-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
