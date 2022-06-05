@@ -1,4 +1,4 @@
 # Pokedex
 A simple responsive Pokedex created with PokéAPI
 
-![Pokédex](./ignore/pokedex.png)
+[![Pokédex](./ignore/pokedex.png?raw=true "Pokédex")](https://github.com/ChristianAlessandri/Pokedex/blob/main/ignore/pok%C3%A9dex.png?raw=true)
